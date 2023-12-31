@@ -12,6 +12,7 @@ const {
 const conflux = new Conflux({
     url: CONFIG.url,
     networkId: CONFIG.networkId,
+    defaultGasPrice: 1000000000,
 });
 
 const CrossSpaceCall = conflux.InternalContract('CrossSpaceCall');
